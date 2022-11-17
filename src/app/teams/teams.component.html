@@ -1,0 +1,10 @@
+<div class="teams" *ngFor="let team of teams, let i = index">
+  <button type="button"
+  >
+    <span class="badge">{{i+1}}.</span>
+    <span class="name">{{team.name}}</span>
+    <img class="flag" [src]="team.flagPath">
+  </button>
+</div>
+
+

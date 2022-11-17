@@ -1,0 +1,7 @@
+<app-login *ngIf="!loginService.isAuthenticated"></app-login>
+<div *ngIf="loginService.isAuthenticated">
+  Welcome {{loginService.user?.username}}!
+  You are {{loginService.user?.roles}}
+  <app-teams></app-teams>
+</div>
+
